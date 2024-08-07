@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #F7DCB9;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.text-center {text-align: center;}
+
+.App_Container {
+  width: 60%;
+  margin: 10% auto;
+}
+
+.App_Container h1 {
+  color: #51829B;
+}
+
+.listItems {
+  background-color: #FFF5E1;
+  color: #0C1844;
+}
+
+
+.listItems p {
+  color: #0C1844;
+  text-align: center;
+  margin: 0;
+  padding: 10px 0px;
+}
+
+.listItems span {
+  display: inline-block;
+  text-align: center;
+  padding: 10px 0;
+  margin: 0;
+  font-size: 15px;
+  border: .3px dotted #51829B;
+}
+
+.listItems span.title {
+  background-color: #51829B;
+}
+
+.listItems span.name, 
+form input[type=text] {
+  width: 60%;
+}
+
+.listItems span.age,
+form input[type=number] {
+  width: 30%;
+}
+
+.listItems span.action, 
+form input[type=submit] {
+  width: 10%;
+}
+
+form input[type=submit] {
+  background-color: #51829B;
+  cursor: pointer;
+}
+
+.listItems span.icon {
+  color: #F90716;
+  cursor: pointer;
+}
+
+form input {
+  padding: 5px 0;
+  background-color: #9BB0C1;
+  border: none;
+  border: .3px dotted #51829B;
+  text-align: center;
+}
+
+
