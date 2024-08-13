@@ -52,7 +52,7 @@ form input[type=text] {
   width: 60%;
 }
 
-.listItems span.age,
+.listItems span.sequence,
 form input[type=number] {
   width: 30%;
 }

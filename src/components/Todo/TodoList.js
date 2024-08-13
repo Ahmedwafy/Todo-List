@@ -15,21 +15,23 @@ const TodoList = (props) => {
     items.map( element => {
         return (
             <div key={element.id}>
-                <span className="name">Name : {element.name }</span>
-                <span className="age">Age : {element.age}</span>
+                <span className="name">Task : {element.name }</span>
+                <span className="sequence"> Sequence
+                    : {element.sequence}</span>
                 <span className="action icon" onClick={ () => DeleteItem(element.id)}>&times;</span> 
             </div>
         )
     })
     )
 
-    : (<p>No Items To View</p>) ;
+    : (<p>No Tasks To Show</p>) ;
+
 
     return (
         <div className="listItems">
             <div>
                 <span className="name title">Name</span>
-                <span className="age title">Age</span>
+                <span className="sequence title">Sequence</span>
                 <span className="action title">Action</span>
             </div>
 

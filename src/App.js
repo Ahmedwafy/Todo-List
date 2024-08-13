@@ -7,9 +7,9 @@ class App extends Component {
 
   state = {
     items : [
-      {id:1, name:"Ahmed", age:27},
-      {id:2, name:"Khaled", age:21},
-      {id:3, name:"Tarek", age:27},
+      {id:1, name:"Study", sequence:"1"},
+      {id:2, name:"Work", sequence:"2"},
+      {id:3, name:"Travel", sequence:"3"},
     ]
   }
 
@@ -24,7 +24,18 @@ class App extends Component {
   }
 
   //  - 1 ---
-  // I Want >> When Press Add or Enter >> Add Data To State and Viewed In Web Page
+  // I Want >> When Press Add or Enter >> Add Data To State and Viewed In Web P
+  
+
+
+
+
+
+
+
+
+
+  
   // this function will take the updated values of state from AddList component 
   // and add it to state of App component
   // ... update = (this.state) from handleSubmit function in AddList

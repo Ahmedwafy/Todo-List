@@ -5,7 +5,7 @@ class AddList extends Component {
 
     state = {
         name : '',
-        age : '',
+        sequence : '',
     }
 
     handleChange = (e) => {
@@ -15,7 +15,7 @@ class AddList extends Component {
             [e.target.id] : e.target.value
             // or
             // name : e.target.value
-            // age : e.target.value
+            // sequence : e.target.value
         });
     }
 
@@ -23,14 +23,14 @@ class AddList extends Component {
         ele.preventDefault();
 
         if (ele.target.name.value !== '') {
-                //  - 3 ---
+            //  - 3 ---
             // put the new updated values of state inside the function
             this.props.addItem(this.state) 
 
             // - 6 --- Clear The Fields inputs after submit
             this.setState ({
                 name : '',
-                age : '',
+                sequence : '',
             })
         } else {
             return null;
@@ -43,9 +43,9 @@ class AddList extends Component {
         return (
             <div className="inputcontainer">
                 <form onSubmit={this.handleSubmit}>
-                    {/* - 7 --- add value of 6th step to name & age */}
-                    <input type="text" placeholder="Enter Name..." id="name" onChange={this.handleChange} value={this.state.name}/>
-                    <input type="number" placeholder="Enter Age..." id="age" onChange={this.handleChange} value={this.state.age}/>
+                    {/* - 7 --- add value of 6th step to name & sequence */}
+                    <input type="text" placeholder="Enter Task..." id="name" onChange={this.handleChange} value={this.state.name}/>
+                    <input type="number" placeholder="Sequence..." id="sequence" onChange={this.handleChange} value={this.state.sequence}/>
                     <input type="submit" value="Add" />
                 </form>
             </div>
